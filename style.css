@@ -135,7 +135,7 @@ button:focus-visible {
 
 .carte:hover {
   scale: 1.02;
-  box-shadow: 0 0 20px rgba(12, 58, 152, 0.8);
+  box-shadow: 0 0 20px rgba(247, 69, 5, 0.8);
   transform: translateY(-2px);
 }
 
@@ -565,23 +565,7 @@ button:focus-visible {
 
 
 
-@media only screen and (max-width: 800px) {
-  .container {
-    width: 90%;
-  }
-
-  .contact-box {
-    flex-direction: column;
-  }
-
-  .contact-left,
-  .contact-right {
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
 
   .hero-contenu,
   .apropos-contenu,
@@ -620,11 +604,23 @@ button:focus-visible {
   .menu {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 16xp;
+    gap: 10px 16px;
+
   }
 }
 
-img:hover {
-  transition: transform 0.3s ease-in-out;
-  transform: scale(0.98);
+
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
 }
