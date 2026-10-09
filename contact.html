@@ -22,79 +22,63 @@
 
     <header class="en-tete">
         <div class="conteneur en-tete-contenu">
-            <a href="contact.html" class="logo"><img src="img/image-removebg-preview.png">
-            </a>
+            <a href="index.html" class="logo"><img src="img/image-removebg-preview.png" alt="Élan Fitness Logo"></a>
             <nav aria-label="Navigation principale">
-
-
                 <ul class="menu">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="propos.html">À propos</a></li>
                     <li><a href="program.html">Programmes</a></li>
                     <li><a href="contact.html" class="lien-actif">Contactez nous</a></li>
                 </ul>
-
             </nav>
         </div>
     </header>
 
     <div class="container">
+        <a href="contact.html" class="background-image"><img src="img/david-goggins-resting-e11ibealqmy7ckwh.jpg"
+                alt=></a>
         <section id="contact" class="section">
-            <div class="conteneur">
-
-                <div class="section-titre">
-                    <h2>Contactez Nous</h2>
-                    <p> N'hésitez pas à contacter Elan Fitness ! </p>
-                </div>
-
+            <div class="section-titre">
+                <h2>Contactez Nous</h2>
+                <p>N'hésitez pas à contacter Elan Fitness !</p>
             </div>
         </section>
-        <form class="contacte">
-            <blockquote class="quote-goggins">
-        <p>« Quand tu penses avoir tout donné, tu n'es qu'à 40 % de tes capacités. »</p>
-        <cite>— David Goggins</cite>
-    </blockquote>
-            <div>
 
-
-                <label>nom</label>
+        <!-- Formulaire b class contact-box -->
+        <form class="contact-box">
+            <div class="field">
+                <label for="nom">Nom</label>
                 <input type="text" id="nom" placeholder="votre nom">
             </div>
 
-            <div>
-
-
-                <label>email</label>
-                <input type="text" id="email" placeholder="votre email">
-
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="votre email">
             </div>
 
-            <div>
-
-
-                <label> Ton message</label>
-                <textarea placeholder="saisir votre message"></textarea>
-
+            <div class="field">
+                <label for="message">Ton message</label>
+                <textarea id="message" placeholder="saisir votre message"></textarea>
             </div>
-
-
 
             <button type="submit">Envoyer</button>
-
         </form>
-        </section>
 
+        <!-- Citation David Goggins m-hottat m-wara l-form -->
+        <blockquote class="quote-goggins">
+            <p>«Everybody comes to a point in their life when they want to quit But it’s what you do at that moment
+                that determines who you are»</p>
+            <cite>— David Goggins</cite>
+        </blockquote>
     </div>
 
     <footer class="pied-de-page">
         <div class="conteneur">
-
             <div class="pied-haut">
                 <div>
                     <p class="logo logo-clair">Élan Fitness</p>
                     <p class="slogan">Ton énergie, ton rythme.</p>
                 </div>
-
                 <nav aria-label="Navigation du pied de page">
                     <ul class="menu menu-pied">
                         <li><a href="index.html">Accueil</a></li>
@@ -104,15 +88,11 @@
                     </ul>
                 </nav>
             </div>
-
             <div class="pied-bas">
                 <p>Adresse : 12 rue des Palmiers, 20000 Casablanca</p>
                 <p>&copy; 2026 Élan Fitness — Projet pédagogique fictif</p>
             </div>
-
         </div>
     </footer>
-
-
 
 </body>

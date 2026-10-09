@@ -133,6 +133,12 @@ button:focus-visible {
   box-shadow: 0 1px 3px rgba(15, 27, 45, 0.08);
 }
 
+.carte:hover {
+  scale: 1.02;
+  box-shadow: 0 0 20px rgba(12, 58, 152, 0.8);
+  transform: translateY(-2px);
+}
+
 .icone {
   width: 48px;
   height: 48px;
@@ -620,5 +626,5 @@ button:focus-visible {
 
 img:hover {
   transition: transform 0.3s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(0.98);
 }
