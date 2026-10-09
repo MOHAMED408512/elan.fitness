@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F8FAFC;
+  color: #111827;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #475569;
+  font-size: 1 2px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #FF6B35;
+  font-weight: 600;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 480px;
+  margin: 50px auto;
+}
+
+
+
+
+.section-titre {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-titre h2 {
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.section-titre p {
+  color: #0F172A;
+  font-size: 16px;
+  font-weight: 1000;
+  font-family: 'Inter';
+}
+
+
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.field {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #FF6B35;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #FF6B35;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #E85A24;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.quote-goggins p {
+  font-size: 13px;
+  font-style: italic;
+  color: #334155;
+  margin-bottom: 6px;
+  line-height: 3;
+}
+
+.quote-goggins cite {
+  font-size: 11px;
+  font-weight: 70;
+  color: #334155;
+  font-style: italic;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .hero-contenu,
+  .apropos-contenu,
+  .cartes,
+  .valeurs {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .chiffres {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .chiffre+.chiffre {
+    border-left: none;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 16px;
+  }
+
+  .pied-haut,
+  .pied-bas {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .en-tete-contenu {
+    height: auto;
+    padding: 14px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16xp;
+  }
+}
